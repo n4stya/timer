@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/timer/static/js/main.5839783b.js",
+    "main.js": "/timer/static/js/main.fbbbbddf.js",
     "index.html": "/timer/index.html",
-    "main.5839783b.js.map": "/timer/static/js/main.5839783b.js.map"
+    "main.fbbbbddf.js.map": "/timer/static/js/main.fbbbbddf.js.map"
   },
   "entrypoints": [
-    "static/js/main.5839783b.js"
+    "static/js/main.fbbbbddf.js"
   ]
 }
