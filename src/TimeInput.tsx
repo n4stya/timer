@@ -14,12 +14,6 @@ const TextContainer = styled(Box)`
     height: 70px;
 `;
 
-const StyledTypography = styled(Typography)`
-    color: #9aa3d3;
-    font-size: 1.7rem;
-    margin: 8px 10px;
-`;
-
 const StyledTextField = styled(TextField)`
     width: 70px;
     .MuiOutlinedInput-notchedOutline {
@@ -37,10 +31,15 @@ const StyledTextField = styled(TextField)`
     .css-1yrc8ca-MuiInputBase-input-MuiInput-input.Mui-disabled {
         -webkit-text-fill-color: rgb(154, 163, 211, 0.5);
     }
-
     .css-5h82ro-MuiInputBase-root-MuiInput-root.Mui-disabled:before {
         border-bottom-style: none;
     }
+`;
+
+const StyledTypography = styled(Typography)`
+    color: #9aa3d3;
+    font-size: 1.7rem;
+    margin: 8px 10px;
 `;
 
 interface TimeInputProps {
@@ -104,7 +103,7 @@ const TimeInput: React.FC<TimeInputProps> = ({
                 max={240}
                 step={1}
                 disabled={isRunning}
-                style={{ color: '#8F9BCC', transform: 'translateY(20px)' }}
+                style={{ color: '#8F9BCC', transform: 'translateY(22px)' }}
             />
             <TextContainer>
                 <StyledTextField
