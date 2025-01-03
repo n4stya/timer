@@ -2,6 +2,7 @@
     "name": "my-app",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://n4stya/timer4.1",
     "overrides": {
         "react-scripts": {
             "@svgr/webpack": "8.1.0",
@@ -61,6 +62,7 @@
         "eslint-plugin-jsx-a11y": "^6.10.2",
         "eslint-plugin-prettier": "^5.2.1",
         "eslint-plugin-styled-components-a11y": "^2.1.36",
+        "gh-pages": "^6.3.0",
         "prettier": "^3.4.2"
     }
 }
