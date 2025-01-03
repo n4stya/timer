@@ -2,7 +2,7 @@
     "name": "my-app",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://n4stya.github.io/timer-countdown",
+    "homepage": "https://n4stya.github.io/timer",
     "overrides": {
         "react-scripts": {
             "@svgr/webpack": "8.1.0",

@@ -37,6 +37,7 @@ const StyledTextField = styled(TextField)`
     .css-1yrc8ca-MuiInputBase-input-MuiInput-input.Mui-disabled {
         -webkit-text-fill-color: rgb(154, 163, 211, 0.5);
     }
+
     .css-5h82ro-MuiInputBase-root-MuiInput-root.Mui-disabled:before {
         border-bottom-style: none;
     }
