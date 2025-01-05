@@ -12,9 +12,7 @@ const TimerContainer = styled(Box)`
     align-items: center;
     margin: 55px;
     padding-bottom: 18px;
-    min-width: 500px;
-    width: 30vw;
-    max-width: 550px;
+    width: 500px;
     min-height: 700px;
     height: 82vh;
     background-color: #2e344d;
