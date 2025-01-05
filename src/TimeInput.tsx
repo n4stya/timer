@@ -8,9 +8,7 @@ const TextContainer = styled(Box)`
     justify-content: center;
     align-items: flex-end;
     margin-top: 0px;
-    min-width: 500px;
-    width: 30vw;
-    max-width: 550px;
+    width: 500px;
     height: 70px;
 `;
 
