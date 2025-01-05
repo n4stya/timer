@@ -59,6 +59,7 @@ const Countdown: React.FC = () => {
     const [isPaused, setIsPaused] = useState<boolean>(false);
     const [minutes, setMinutes] = useState<number>(0);
     const [seconds, setSeconds] = useState<number>(0);
+    const [resetPressed, setResetPressed] = useState<boolean>(false);
 
     const audioRef = React.useRef<HTMLAudioElement>(null);
 
@@ -90,13 +91,20 @@ const Countdown: React.FC = () => {
     }, []);
 
     const resetTimer = () => {
-        setIsRunning(false);
-        setIsPaused(false);
-        setTimeLeft(0);
-        setInitialTime(0);
-        setMinutes(0);
-        setSeconds(0);
+        if (!resetPressed) {
+            setIsPaused(true);
+            setResetPressed(true);
+        } else {
+            setIsRunning(false);
+            setIsPaused(false);
+            setTimeLeft(0);
+            setInitialTime(0);
+            setMinutes(0);
+            setSeconds(0);
+            setResetPressed(false);
+        }
     };
+    [resetPressed];
 
     const isTimeSet = initialTime > 0;
 

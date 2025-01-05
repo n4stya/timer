@@ -68,6 +68,7 @@ const Timer: React.FC = memo(() => {
     const [time, setTime] = useState<number>(0);
     const [isActive, setIsActive] = useState<boolean>(false);
     const [isPaused, setIsPaused] = useState<boolean>(false);
+    const [resetPressed, setResetPressed] = useState<boolean>(false);
 
     useEffect(() => {
         let interval: NodeJS.Timeout | null = null;
@@ -90,10 +91,16 @@ const Timer: React.FC = memo(() => {
     }, [isActive]);
 
     const resetTimer = useCallback(() => {
-        setIsActive(false);
-        setIsPaused(false);
-        setTime(0);
-    }, []);
+        if (!resetPressed) {
+            setIsPaused(true);
+            setResetPressed(true);
+        } else {
+            setIsActive(false);
+            setIsPaused(false);
+            setTime(0);
+            setResetPressed(false);
+        }
+    }, [resetPressed]);
 
     const formatTime = useCallback((time: number): string => {
         const minutes = String(Math.floor((time / 60000) % 60)).padStart(2, '0');
