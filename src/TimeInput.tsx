@@ -9,6 +9,7 @@ const TextContainer = styled(Box)`
     align-items: flex-end;
     margin-top: 0px;
     width: 500px;
+    min-width: 500px;
     height: 70px;
 `;
 

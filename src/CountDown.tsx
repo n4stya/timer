@@ -13,6 +13,7 @@ const CountdownContainer = styled(Box)`
     justify-content: space-between;
     align-items: center;
     border-radius: 20px;
+    min-width: 500px;
     width: 500px;
     min-height: 700px;
     height: 82vh;
